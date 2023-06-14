@@ -220,3 +220,4 @@ slider_observer = new MutationObserver((mutations) => {
   });
 });
 slider_observer.observe(slider_textNode, { characterData: true });
+partitionRender(20);
