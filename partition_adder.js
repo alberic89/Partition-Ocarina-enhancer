@@ -105,7 +105,7 @@ while (notes.indexOf("tiretx2") != -1) {
     notes.splice(notes.indexOf("tiretx2"), 1);
 }
 
-/* Transforme et gère les parenthèse et répétitions */
+/* Transforme et gère les parenthèses et répétitions */
 for (number = 2; number < 5; number++) {
     while (notes.indexOf("x" + number) != -1) {
         start_repetition = 0;
