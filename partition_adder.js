@@ -201,7 +201,7 @@ function partitionRender(system_lenght=15){
     console.log(ABCstring);
 
     /* Utilisation de la librairie abcjs */
-    ABCJS.renderAbc("ABCrender", ABCstring, { responsive: 'resize'});
+    ABCJS.renderAbc("ABCrender", ABCstring, { responsive: 'resize', oneSvgPerLine: true});
 }
 
 slider = document.getElementsByClassName("vue-slider-dot-tooltip-text")[0];
@@ -220,3 +220,4 @@ slider_observer = new MutationObserver((mutations) => {
   });
 });
 slider_observer.observe(slider_textNode, { characterData: true });
+script.onload = function(){partitionRender(20)};
