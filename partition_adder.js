@@ -117,7 +117,7 @@ for (number = 2; number < 5; number++) {
                 start_repetition--;
             }
         } else {
-            if (notes[notes.indexOf("x" + number) + 1] == "enter") {
+            if (notes[notes.indexOf("x" + number) + 1] == "enter" || notes[notes.indexOf("x" + number) + 1] == "undefined") {
                 end_repetition = notes.indexOf("x" + number);
                 start_repetition = notes.indexOf("x" + number);
                 while (notes[start_repetition - 1] != "enter" &&  start_repetition != 0) {
